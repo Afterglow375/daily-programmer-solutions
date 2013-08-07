@@ -13,16 +13,13 @@
 #include <cmath>
 using namespace std;
 
-int main(int argc, char const *argv[])
+int main()
 {
 	unsigned int n, m;
 	cout << "Enter N and M: ";
 	cin >> n >> m;
 
-	unsigned int output = 9;
-	for (int i=1; i < n; i++) {
-		output = (output * 10) + 9;
-	}
+	unsigned int output = pow(10, n) - 1; // Highest possible output initialized
 
 	int mod = output % m;
 	output = output - mod;
