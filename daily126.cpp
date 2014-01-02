@@ -13,7 +13,7 @@
 using namespace std;
  
 void pthPower() {
-  cout << "Enter an X: ";
+  	cout << "Enter an X: ";
 	unsigned int x;
 	cin >> x;
  
