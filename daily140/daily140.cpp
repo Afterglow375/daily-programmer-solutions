@@ -22,15 +22,16 @@
 #include <string>
 using namespace std;
 
-vector<string> &split(const string &s, char delim, vector<string> &elems) {
+// Splits lines into tokens
+void split(const string &s, char delim, vector<string> &elems) {
     stringstream ss(s);
     string item;
     while (getline(ss, item, delim)) {
         elems.push_back(item);
     }
-    return elems;
 }
 
+// Outputs final adjacency matrix
 void printAdjacencyMatrix(int adjacencyMatrix[], int numNodes) {
 	for (unsigned int line = 0; line < numNodes; line++) {
 		for (unsigned int node = 0; node < numNodes; node++) {
