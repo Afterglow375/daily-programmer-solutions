@@ -1,17 +1,7 @@
-
 public class Point {
 	public double x;
 	public double y;
 	public double limit;
-	
-	public static void main(String[] args) {
-		Point p1 = new Point(0, 0);
-		Point p2 = new Point(1, 0);
-		Point p3 = new Point(0, 1); 
-		System.out.println(p1.calcDistance(p2));
-		System.out.println(p1.calcDistance(p3));
-		System.out.println(p1.calcAngle(p2, p3));
-	}
 	
 	public Point(double x, double y) {
 		this.x = x;
@@ -29,9 +19,7 @@ public class Point {
 		double dist1 = this.calcDistance(p1);
 		double dist2 = this.calcDistance(p2);
 		double dist3 = p1.calcDistance(p2);
-		System.out.println(dist1 + " " + dist2 + " " + dist3);
-		System.out.println((dist1*dist1 + dist2+dist2 - dist3*dist3) / (2 * dist1 * dist2));
-		return Math.toDegrees(Math.acos((dist1*dist1 + dist2+dist2 - dist3*dist3) / (2 * dist1 * dist2)));
+		return Math.toDegrees(Math.acos((dist1*dist1 + dist2*dist2 - dist3*dist3) / (2 * dist1 * dist2)));
 	}
 	
 	// Takes two points and calculates the created triangle's area
