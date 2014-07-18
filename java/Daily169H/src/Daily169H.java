@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Daily169 {
+public class Daily169H {
 	public static void main(String[] args) {
 		File input = new File("src/input.txt");
 		
