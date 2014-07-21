@@ -21,7 +21,7 @@ public class Daily171I {
 			char oneChar = 'O';
 			char zeroChar = ' ';
 			
-			// Creating the binary string, replacing the 1's with oneChar and 0's with zeroChar
+			// Creating the binary image, replacing the 1's with oneChar and 0's with zeroChar
 			for (int i = 0; i < hexInput.length; i++) {
 				image.add(hexToBin(hexInput[i]).replace('1', oneChar).replace('0', zeroChar));
 			}
